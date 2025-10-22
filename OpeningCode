@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Graceful — Pilates by Grace</title>
+  <meta name="description" content="Graceful — beat-driven Pilates instruction by Grace. Empowering, educational, and confidence-building movement experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --bg: #fffaf7; --ink:#1f2937; --accent:#e9d8c9; --blush:#f5e7e0; --sage:#dfeae5 }
+    body{ background:var(--bg); color:var(--ink) }
+    .brand{ font-family: "Playfair Display", serif }
+    .ui{ font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji" }
+    .glass{ backdrop-filter: blur(8px); background:rgba(255,255,255,.6) }
+  </style>
+</head>
+<body class="ui scroll-smooth">
+  <!-- Top Nav -->
+  <header class="sticky top-0 z-50 glass border-b border-black/5">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        <span class="h-8 w-8 rounded-full bg-gray-900 text-white grid place-content-center brand">G</span>
+        <span class="brand text-xl">Graceful</span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:opacity-70">About</a>
+        <a href="#offerings" class="hover:opacity-70">Offerings</a>
+        <a href="#gallery" class="hover:opacity-70">Gallery</a>
+        <a href="#playlists" class="hover:opacity-70">Playlists</a>
+        <a href="#testimonials" class="hover:opacity-70">Love Notes</a>
+        <a href="#contact" class="hover:opacity-70">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:inline-flex rounded-full px-4 py-2 bg-gray-900 text-white text-sm">Connect</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white via-[var(--blush)]/60 to-transparent"></div>
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="brand text-5xl md:text-6xl leading-tight">Move with <span class="underline decoration-[var(--accent)] decoration-8 underline-offset-8">Grace</span></h1>
+        <p class="mt-5 text-lg text-gray-700">Beat‑driven Pilates instruction that blends music, biomechanics, and hands‑on guidance to build strength, confidence, and deep body awareness.</p>
+        <div class="mt-7 flex gap-3">
+          <a href="#offerings" class="rounded-full px-5 py-3 bg-gray-900 text-white">Explore Offerings</a>
+          <a href="#contact" class="rounded-full px-5 py-3 border border-gray-900">Inquire</a>
+        </div>
+        <p class="mt-4 text-xs uppercase tracking-wider text-gray-500">Pilates • Biomechanics • Mindful Movement</p>
+      </div>
+      <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-xl bg-[var(--sage)]/40">
+        <!-- Replace the image URL below with your own photo -->
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1600&auto=format&fit=crop" alt="Grace teaching Pilates" class="h-full w-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-5 gap-10 items-start">
+      <div class="md:col-span-2">
+        <div class="aspect-[4/5] rounded-3xl overflow-hidden bg-[var(--sage)]/30">
+          <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1600&auto=format&fit=crop" alt="Pilates flow" class="h-full w-full object-cover" />
+        </div>
+      </div>
+      <div class="md:col-span-3">
+        <h2 class="brand text-4xl">About Grace</h2>
+        <p class="mt-4 text-gray-700">Grace is a certified Pilates instructor known for beat‑driven flows and precise, hands‑on coaching. Her sessions pair curated playlists with mindful sequencing, guiding clients to feel exactly which muscles are working and why. Expect a supportive, confidence‑building atmosphere — and a deeper connection to your body’s mechanics.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-sm">
+          <li class="flex items-center gap-2"><span class="h-2.5 w-2.5 rounded-full bg-gray-900"></span> Beat‑aligned programming</li>
+          <li class="flex items-center gap-2"><span class="h-2.5 w-2.5 rounded-full bg-gray-900"></span> Hands‑on corrections</li>
+          <li class="flex items-center gap-2"><span class="h-2.5 w-2.5 rounded-full bg-gray-900"></span> Biomechanics education</li>
+          <li class="flex items-center gap-2"><span class="h-2.5 w-2.5 rounded-full bg-gray-900"></span> Empowering, inclusive vibe</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section id="offerings" class="py-16 md:py-24 bg-[var(--blush)]/40">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="brand text-4xl">Offerings</h2>
+      <p class="mt-3 text-gray-700">Private training, small‑group classes, and community events designed to meet you where you are.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <article class="rounded-3xl bg-white p-6 shadow-sm border border-black/5">
+          <h3 class="font-semibold text-lg">Private 1:1 Sessions</h3>
+          <p class="mt-2 text-sm text-gray-700">Personalized programming with hands‑on corrections and clear muscle cueing.</p>
+        </article>
+        <article class="rounded-3xl bg-white p-6 shadow-sm border border-black/5">
+          <h3 class="font-semibold text-lg">Small‑Group Classes</h3>
+          <p class="mt-2 text-sm text-gray-700">Beat‑driven flows for friends or teams — energizing and form‑focused.</p>
+        </article>
+        <article class="rounded-3xl bg-white p-6 shadow-sm border border-black/5">
+          <h3 class="font-semibold text-lg">Events & Collaborations</h3>
+          <p class="mt-2 text-sm text-gray-700">Workshops, pop‑ups, and brand partnerships tailored to your community.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="brand text-4xl">Gallery</h2>
+      <p class="mt-3 text-gray-700">A glimpse into the vibe — movement, music, and mindful strength.</p>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img class="rounded-2xl object-cover h-44 w-full" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt=""/>
+        <img class="rounded-2xl object-cover h-44 w-full" src="https://images.unsplash.com/photo-1588286840104-8957b019727f?q=80&w=1200&auto=format&fit=crop" alt=""/>
+        <img class="rounded-2xl object-cover h-44 w-full" src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?q=80&w=1200&auto=format&fit=crop" alt=""/>
+        <img class="rounded-2xl object-cover h-44 w-full" src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1200&auto=format&fit=crop" alt=""/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Playlists -->
+  <section id="playlists" class="py-16 md:py-24 bg-[var(--sage)]/40">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="brand text-4xl">Playlists</h2>
+      <p class="mt-3 text-gray-700">Every flow moves to music. Swap in your Spotify/Apple links below.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <a class="rounded-2xl bg-white border border-black/5 p-5 shadow-sm" href="#" target="_blank" rel="noopener">Morning Flow — Spotify</a>
+        <a class="rounded-2xl bg-white border border-black/5 p-5 shadow-sm" href="#" target="_blank" rel="noopener">Power Pilates — Spotify</a>
+        <a class="rounded-2xl bg-white border border-black/5 p-5 shadow-sm" href="#" target="_blank" rel="noopener">Slow + Intentional — Apple Music</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="brand text-4xl">Love Notes</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <blockquote class="rounded-3xl bg-white p-6 shadow-sm border border-black/5">
+          <p class="text-gray-800">“Grace’s cues are next‑level — I finally feel what I’m supposed to be working.”</p>
+          <footer class="mt-4 text-sm text-gray-500">— A.M.</footer>
+        </blockquote>
+        <blockquote class="rounded-3xl bg-white p-6 shadow-sm border border-black/5">
+          <p class="text-gray-800">“The music keeps me motivated, and her hands‑on guidance keeps me safe.”</p>
+          <footer class="mt-4 text-sm text-gray-500">— J.R.</footer>
+        </blockquote>
+        <blockquote class="rounded-3xl bg-white p-6 shadow-sm border border-black/5">
+          <p class="text-gray-800">“I leave her classes feeling strong, calm, and confident.”</p>
+          <footer class="mt-4 text-sm text-gray-500">— S.K.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-24 bg-[var(--blush)]/40">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="brand text-4xl">Contact</h2>
+      <p class="mt-3 text-gray-700">Questions, collaborations, or private sessions? Say hello below.</p>
+      <!-- Formspree: replace YOUR_FORM_ID with your own after creating a free form at https://formspree.io -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-8 grid gap-4 bg-white p-6 rounded-3xl border border-black/5 shadow-sm">
+        <div class="grid md:grid-cols-2 gap-4">
+          <label class="text-sm">Name<input required name="name" class="mt-1 w-full border rounded-xl p-3" placeholder="Your name"></label>
+          <label class="text-sm">Email<input required name="email" type="email" class="mt-1 w-full border rounded-xl p-3" placeholder="you@example.com"></label>
+        </div>
+        <label class="text-sm">Message<textarea required name="message" rows="5" class="mt-1 w-full border rounded-xl p-3" placeholder="Tell me what you’re looking for…"></textarea></label>
+        <button class="rounded-full px-5 py-3 bg-gray-900 text-white w-fit">Send</button>
+        <p class="text-xs text-gray-500">By submitting, you consent to be contacted by Graceful.</p>
+      </form>
+
+      <!-- Newsletter (optional). Replace with Buttondown/ConvertKit embed if you want. -->
+      <div class="mt-6 text-sm text-gray-600">Prefer updates by email? <a class="underline" href="#">Join the newsletter</a>.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm">© <span id="y"></span> Graceful — Pilates by Grace</p>
+      <div class="flex items-center gap-4 text-sm">
+        <!-- Replace # with real links -->
+        <a href="#" class="hover:opacity-70">Instagram</a>
+        <a href="#" class="hover:opacity-70">TikTok</a>
+        <a href="#" class="hover:opacity-70">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
